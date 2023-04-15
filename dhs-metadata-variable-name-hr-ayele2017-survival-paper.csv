@@ -1,0 +1,9 @@
+ItemType,FileCode,RecordName,RecordTypeValue,RecordLabel,Name,Label,Start,Len,Occurrences,ZeroFill,DecimalChar,Decimal,FMETYPE,FMETYPE.1,FMETYPE.2,FMETYPE.3
+IdItem,ET_2011_DHS_07082021_1847_58107.ETHR61FL,RECORD1,,RECORD1,HHID,Case Identification,1,12,,,,,fme_char(12),fme_char(12),fme_char(12),fme_char(12)
+Item,ET_2011_DHS_07082021_1847_58107.ETHR61FL,RECORD1,,RECORD1,HV000,Country code and phase,13,3,,No,No,,fme_char(3),fme_char(3),fme_char(3),fme_char(3)
+Item,ET_2011_DHS_07082021_1847_58107.ETHR61FL,RECORD1,,RECORD1,HV001,Cluster number,16,8,,No,No,,fme_char(8),fme_char(8),fme_char(8),fme_char(8)
+Item,ET_2011_DHS_07082021_1847_58107.ETHR61FL,RECORD1,,RECORD1,HV002,Household number,24,4,,No,No,,fme_char(4),fme_char(4),fme_char(4),fme_char(4)
+Item,ET_2011_DHS_07082021_1847_58107.ETHR61FL,RECORD1,,RECORD1,HV003,Respondent's line number (answering Household questionnaire),28,3,,No,No,,fme_char(3),fme_char(3),fme_char(3),fme_char(3)
+Item,ET_2011_DHS_07082021_1847_58107.ETHR61FL,RECORD1,,RECORD1,HV004,Ultimate area unit,31,4,,No,No,,fme_char(4),fme_char(4),fme_char(4),fme_char(4)
+Item,ET_2011_DHS_07082021_1847_58107.ETHR61FL,RECORD1,,RECORD1,HV005,Household sample weight (6 decimals),35,8,,No,No,,fme_char(8),fme_char(8),fme_char(8),fme_char(8)
+Item,ET_2011_DHS_07082021_1847_58107.ETHR61FL,RECORD1,,RECORD1,HA35,Smoking (cigarettes in last 24 hours),2101,2,14,No,No,,fme_char(2),fme_char(2),fme_char(2),fme_char(2)
