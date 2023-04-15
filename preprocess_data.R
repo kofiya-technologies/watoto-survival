@@ -1,6 +1,7 @@
 ################################################################################
 #
-# Survival analysis for under-five (u5) mortality
+# Cleaning and Recoding DHS survey data for survival analysis of 
+# under-five (u5) child mortality
 #
 # By Kofiya Technologies (https://kofiyatech.com/)
 #

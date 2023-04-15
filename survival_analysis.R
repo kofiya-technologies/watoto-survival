@@ -1,6 +1,6 @@
 ################################################################################
 #
-# Survival analysis for under-five (u5) mortality
+# Survival analysis of under-five (u5) child mortality
 #
 # By Kofiya Technologies (https://kofiyatech.com/)
 #
