@@ -24,8 +24,8 @@ sessionInfo()
 
 
 ## Usage
-1. First, use this script `preprocess_data.R` to clean and recode the raw DHS survey data.
-2. To proceed with survival analysis on the cleaned DHS survey data, run the `survival_analysis.R` script. Methods from the field of survival analysis, such as the Kaplan-Meier and the Cox regression model, are used here.
+1. First, use this script `watoto_survival/preprocess_data.R` to clean and recode the raw DHS survey data.
+2. To proceed with survival analysis on the cleaned DHS survey data, run the `watoto_survival/survival_analysis.R` script. Methods from the field of survival analysis, such as the Kaplan-Meier and the Cox regression model, are used here.
 
 
 ## Contributing
