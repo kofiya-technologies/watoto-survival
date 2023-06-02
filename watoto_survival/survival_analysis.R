@@ -8,7 +8,7 @@
 
 
 # Set working directory
-setwd("D:\\RStudioProjects\\watoto-survival")
+setwd("D:\\RStudioProjects\\watoto-survival\\watoto_survival")
 
 ################################################################################
 # Load data

@@ -24,7 +24,7 @@ library(zeallot)    # to enable R return multiple output values from a function 
 ################################################################################
 # Config file paths
 ################################################################################
-DIR_DATA = 'D:\\RStudioProjects\\watoto-survival'  # main path for dhs data storage 
+DIR_DATA = 'D:\\RStudioProjects\\watoto-survival\\watoto_survival'  # main path for dhs data storage 
 
 FILENAME_DATA_KR = 'dhs-table-kr-ayele2017-survival-paper.csv'   # raw data table observations (RECORD1) obtained from children (KR) table
 FILENAME_DATA_HR = 'dhs-table-hr-ayele2017-survival-paper.csv'   # raw data table observations (RECORD1) obtained from households (HR) table
