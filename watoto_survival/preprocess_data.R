@@ -24,7 +24,8 @@ library(zeallot)    # to enable R return multiple output values from a function 
 ################################################################################
 # Config file paths
 ################################################################################
-DIR_DATA = 'D:\\RStudioProjects\\watoto-survival\\watoto_survival'  # main path for dhs data storage 
+DIR_DATA = 'D:\\RStudioProjects\\watoto-survival\\data'  # file path for input data
+DIR_METADATA = 'D:\\RStudioProjects\\watoto-survival\\watoto_survival'  # file path for metadata
 
 FILENAME_DATA_KR = 'dhs-table-kr-ayele2017-survival-paper.csv'   # raw data table observations (RECORD1) obtained from children (KR) table
 FILENAME_DATA_HR = 'dhs-table-hr-ayele2017-survival-paper.csv'   # raw data table observations (RECORD1) obtained from households (HR) table
@@ -98,28 +99,28 @@ rm(data_merged)
 # 1.3. Load metadata tables
 ################################################################################
 # Load metadata for variable name - KR
-filepath_data <- file.path(DIR_DATA, FILENAME_METADATA_VARIABLE_NAME_KR)
+filepath_data <- file.path(DIR_METADATA, FILENAME_METADATA_VARIABLE_NAME_KR)
 metadata_variable_name_kr <- readr::read_csv(file = filepath_data)
 
 metadata_variable_name_kr %>% head()
 
 
 # Load metadata for variable name - HR
-filepath_data <- file.path(DIR_DATA, FILENAME_METADATA_VARIABLE_NAME_HR)
+filepath_data <- file.path(DIR_METADATA, FILENAME_METADATA_VARIABLE_NAME_HR)
 metadata_variable_name_hr <- readr::read_csv(file = filepath_data)
 
 metadata_variable_name_hr %>% head()
 
 
 # Load metadata for variable value - KR
-filepath_data <- file.path(DIR_DATA, FILENAME_METADATA_VARIABLE_VALUE_KR)
+filepath_data <- file.path(DIR_METADATA, FILENAME_METADATA_VARIABLE_VALUE_KR)
 metadata_variable_value_kr <- readr::read_csv(file = filepath_data)
 
 metadata_variable_value_kr %>% head()
 
 
 # Load metadata for variable value - HR
-filepath_data <- file.path(DIR_DATA, FILENAME_METADATA_VARIABLE_VALUE_HR)
+filepath_data <- file.path(DIR_METADATA, FILENAME_METADATA_VARIABLE_VALUE_HR)
 metadata_variable_value_hr <- readr::read_csv(file = filepath_data)
 
 metadata_variable_value_hr %>% head()
