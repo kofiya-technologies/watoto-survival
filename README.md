@@ -1,6 +1,7 @@
-# watoto-survival
+# WATOTO SURVIVAL
 
-WATOTO SURVIVAL is an open source project for data scientists and researchers to provide insights for policy makers in eradicating child mortality in developing countries through classical statistical methods such as survival analysis, for DHS survey data.
+WATOTO SURVIVAL is an open source project aimed at data scientists, researchers and graduate students working to provide insights for policy makers in eradicating child mortality in developing countries using classical statistical methods, such as survival analysis, with DHS survey data.
+
 
 ## Table of Contents
 
@@ -10,28 +11,36 @@ WATOTO SURVIVAL is an open source project for data scientists and researchers to
 - [Contributing](#contributing)
 - [License](#license)
 
+
 ## R Version
 
-This project requires R version `4.2.0` or higher. To check your R version, run:
+This project requires `R` version `4.2.0` or higher. To check your R version, run the following command in your R console:
 
 ```commandline
 sessionInfo()
 ```
 
 ## Installation
+
+To get started with WATOTO SURVIVAL, follow these steps:
 1. Create a new R project in RStudio.
 2. Clone the repository.
 
 
 ## Usage
-1. First, use this script `watoto_survival/preprocess_data.R` to clean and recode the raw DHS survey data.
-2. To proceed with survival analysis on the cleaned DHS survey data, run the `watoto_survival/survival_analysis.R` script. Methods from the field of survival analysis, such as the Kaplan-Meier and the Cox regression model, are used here.
+
+To use the WATOTO SURVIVAL application, follow these steps:
+1. Clean and recode the raw DHS survey data using the script `watoto_survival/preprocess_data.R`.
+2. Perform survival analysis on the cleaned DHS survey data by running the script `watoto_survival/survival_analysis.R`. This script utilizes methods from the field of survival analysis, such as the Kaplan-Meier and the Cox regression model.
 
 
 ## Contributing
-Please let us know if you would want to learn more about the project and contribute. You can contact us at any time by sending an email to kofiya.technologies@gmail.com.
+
+We welcome contributions and would be happy to provide more information about the project. Feel free to contact us anytime by sending an email to `kofiya.technologies@gmail.com`.
+
 
 ## License
-GPL
+
+WATOTO SURVIVAL is licensed under the GPL license.
 
 
