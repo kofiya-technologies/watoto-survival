@@ -1,6 +1,6 @@
 # WATOTO SURVIVAL
 
-WATOTO SURVIVAL is an open source project aimed at data scientists, researchers and graduate students working to provide insights for policy makers in eradicating child mortality in developing countries using classical statistical methods, such as survival analysis, with DHS survey data.
+WATOTO SURVIVAL is an open source project that utilizes classical survival analysis methods in R, including Kaplan-Meier and Cox regression techniques. Its primary objective is to enable researchers and graduate students to collaborate and identify risk factors related to child mortality in children under five years old. By leveraging statistical techniques and the rich dataset from DHS surveys, WATOTO SURVIVAL aims to provide valuable insights for policymakers and researchers in their efforts to address this critical issue. 
 
 
 ## Table of Contents
@@ -30,8 +30,7 @@ To get started with WATOTO SURVIVAL, follow these steps:
 ## Usage
 
 To use the WATOTO SURVIVAL application, follow these steps:
-1. Clean and recode the raw DHS survey data using the script `watoto_survival/preprocess_data.R`.
-2. Perform survival analysis on the cleaned DHS survey data by running the script `watoto_survival/survival_analysis.R`. This script utilizes methods from the field of survival analysis, such as the Kaplan-Meier and the Cox regression model.
+* Perform survival analysis on the cleaned DHS survey data by running the script `watoto_survival/survival_analysis.R`. This script utilizes methods from the field of survival analysis, such as the Kaplan-Meier and the Cox regression model.
 
 
 ## Contributing
