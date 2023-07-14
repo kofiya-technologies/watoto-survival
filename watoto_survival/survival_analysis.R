@@ -74,6 +74,11 @@ surv_data <- surv_data %>%
 surv_data %>% 
   dplyr::count(is_child_alive, censored_u5)
 
+# Drop input variable used to derive censored_u5
+surv_data <- surv_data %>% 
+  dplyr::select(-is_child_alive)
+
+
 
 # Kaplan-Meier (KM) Analysis - Life Table ######################################
 km_baseline <- survival::survfit(Surv(age_child_months, censored_u5) ~ 1,
@@ -96,7 +101,7 @@ survminer::ggsurvplot(km_baseline,
                       conf.int = TRUE,
                       ggtheme = theme_minimal())
 
-# KM Analysis by area of residence   ###########################################
+# KM Analysis by place of residence (POR)   ####################################
 km_por <- survival::survfit(Surv(age_child_months, 
                                  censored_u5) ~ place_of_residence,
                             data=surv_data,
@@ -122,15 +127,6 @@ cox_por <- survival::coxph(Surv(age_child_months, censored_u5) ~ place_of_reside
 summary(cox_por)
 
 
-
-# Fit Cox Proportional Hazard (PH) model - Cox Regression model  ###############
-cox_por <- survival::coxph(Surv(age_child_months, 
-                                censored_u5) ~ place_of_residence,
-                           data = surv_data)
-
-summary(cox_por)
-
-
 # ------------------------------------------------------------------------------
 # Fit Cox PH model for all features
 # ------------------------------------------------------------------------------
@@ -140,7 +136,11 @@ feature_vars <- subset(feature_vars,
                        feature_vars != "age_child_months" 
                        & feature_vars != "censored_u5" 
                        & feature_vars != "survey_country"
-                       & feature_vars != "survey_year")
+                       & feature_vars != "survey_year"
+                       & feature_vars != "cluster_number"
+                       & feature_vars != "household_number"
+                       & feature_vars != "respondent_line_number"
+                       )
 
 # Create data set with feature_vars and target vars
 variable_of_interest <- c(feature_vars, 'age_child_months', 'censored_u5')
