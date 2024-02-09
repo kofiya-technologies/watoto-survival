@@ -7,7 +7,7 @@
 # including Kaplan-Meier and Cox regression techniques. Its primary objective 
 # is to enable researchers and graduate students to collaborate and identify 
 # risk factors related to child mortality in children under five years old. 
-# By leveraging statistical techniques and the rich dataset from DHS surveys, 
+# By leveraging statistical techniques and the rich data set from DHS surveys, 
 # WATOTO SURVIVAL aims to provide valuable insights for policymakers and 
 # researchers in their efforts to address this critical issue. 
 #
@@ -66,11 +66,6 @@ surv_data <- surv_data %>%
                                      0))
 
 # Distribution of censoring variable
-#
-# OUTPUT
-# is_child_alive censored_u5     n
-# no             1               537
-# yes            0               8218
 surv_data %>% 
   dplyr::count(is_child_alive, censored_u5)
 
